@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
-    "start:dev": "nodemon server --ignore dist/ --ignore src/ & npm run build:dev"
+    "start:dev": "env-cmd -f ./.env nodemon server --ignore dist/ --ignore/src"
   },
   "author": "",
   "license": "ISC",
@@ -19,11 +19,27 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "cookie-parser": "^1.4.5",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.11",
     "path": "^0.12.7",
     "pg": "^7.18.2",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.0",
+    "react-hook-form": "^5.6.1",
+    "react-sidebar": "^3.0.2",
+    "reactstrap": "^8.4.1",
+    "validator": "^13.0.0"
   }
 }
